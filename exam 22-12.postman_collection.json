@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "10925638-c942-47c8-80ba-1833663b7fa8",
+		"name": "exam 22-12",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"hejsa\",\r\n\"email\": \"testmail\",\r\n        \"supervisor\": {\r\n            \"id\": 1            \r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				},
+				"description": "adder en en Student"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				},
+				"description": "Get all Students"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\" :1,\r\n\"name\": \"kreller\",\r\n\"email\": \"t22m2ail\",\r\n        \"supervisor\": {\r\n            \"id\": 1,\r\n            \"name\": \"Teacher1\",\r\n            \"email\": \"t1@kea.dk\"          \r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student"
+					]
+				},
+				"description": "Put, update en student info"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/student/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"1"
+					]
+				},
+				"description": "Slet en student for id"
+			},
+			"response": []
+		}
+	]
+}
